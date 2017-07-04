@@ -1,5 +1,5 @@
-# Todo API
-Simple TODO api
+# Todo API [![CI Status](https://travis-ci.org/hyanmandian/todo-api.svg?branch=master)](https://travis-ci.org/hyanmandian/todo-api/)
+[Go to API!](https://uniritter-todo-api.herokuapp.com/)
 
 ## Endpoints
 ```
