@@ -1,0 +1,21 @@
+{
+  "name": "todo-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "./node_modules/mocha/bin/mocha **/*.test.js"
+  },
+  "author": "Hyan Mandian <hyanmandian@hotmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "expect.js": "^0.3.1",
+    "express": "^4.15.3",
+    "memory-cache": "^0.2.0",
+    "mocha": "^3.4.2",
+    "ramda": "^0.24.1",
+    "uuid": "^3.1.0"
+  }
+}
