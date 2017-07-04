@@ -5,7 +5,16 @@ const { path, propOr, has, not } = require('ramda');
 
 app.use(bodyParser.json());
 
-app.get('/*', (req, res) => res.send('Welcome to TODO API!'));
+app.get('/', (req, res) => {
+    res.send(`
+        Welcome to TODO API! You can use the following endpoints: \n\n
+        GET /tasks \n
+        GET /tasks/:task \n
+        POST /tasks \n
+        PUT /tasks/:task \n
+        DELETE /tasks/:task
+    `);
+});
 
 app.get('/tasks', (req, res) => res.send(taskRepository.all()));
 
