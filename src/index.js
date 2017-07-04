@@ -5,6 +5,8 @@ const { path, propOr, has, not } = require('ramda');
 
 app.use(bodyParser.json());
 
+app.get('/*', (req, res) => res.send('Welcome to TODO API!'));
+
 app.get('/tasks', (req, res) => res.send(taskRepository.all()));
 
 app.get('/tasks/:task', (req, res) => {
@@ -38,4 +40,4 @@ app.delete('/tasks/:task', (req, res) => {
     return res.sendStatus(400);
 })
 
-app.listen(1337);
+app.listen(process.env.PORT || 1337);
