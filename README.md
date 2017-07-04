@@ -1,5 +1,14 @@
 # Todo API
+Simple TODO api
 
+## Endpoints
+```
+GET /tasks
+GET /tasks/:task
+POST /tasks
+PUT /tasks/:task
+DELETE /tasks/:task
+```
 ## Contributing
 
 1. Fork it ( https://github.com/tasima-uniritter/todo-api/fork )
